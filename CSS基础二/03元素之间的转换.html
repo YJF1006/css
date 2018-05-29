@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	/* 块元素转换为行内元素 */
+		h1,p{
+			display: inline;
+		}
+		
+		/* 行元素转换为块元素 */
+		span{
+			display:block;
+		}
+ 		 
+		.box,a,strong{
+			display:inline-block;
+			width:200px;
+			height:300px;
+			background-color:red;
+		}
+
+ 
+
+	</style>
+</head>
+<body>
+	<div>元素之间的转换</div>
+	<p>块元素转换为行内元素 display:inline; </p><br><br><br>
+
+
+
+	<span>行转换为块 display:block</span><br><br><br>
+
+
+
+
+	<div class="box">狗子哥   块和行转换为行内块 display：inline-block</div>
+	<a href="#">怪蜀黍</a>
+	<strong>小萝莉</strong> 
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.usename{
+			border:0 none;      /* 去掉边框*/
+			outline-style:none; /*去轮廓线*/
+			background:#999;
+			border: 1px dashed green;
+		}
+		
+		.usename:focus{
+			background:red;
+		}
+		.email{
+			border:0 none;      /* 去掉边框*/
+			outline-style:none;
+			border-bottom:1px dotted red;
+		}
+		
+		.search{
+			border:0 none;      /* 去掉边框*/
+			outline-style:none;
+			border:1px soild #999;
+			background:url('../CSS基础二/搜索图标.jpg') no-repeat;
+		}
+
+	</style>
+</head>
+<body>
+	<label for='usename'>用户名：</label><input type="text" class='usename' id='usename'>   <br><br>
+	邮箱：<input type="text" class='email'>       <br><br>
+	搜索：<input type="text" calss='search'>  <br><br>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"><!--逗号是并集选择器（几个逗号几块）；空格是后代选择器（属于级联）；标签选择器是指-->
+<head>
+	<meta charset="UTF-8">
+	<title>10选择器综合练习</title>
+	<style type='text/css'>
+		div.div1 ul.box li,div.div1 p{
+			color:red;
+		}
+
+		div.box p.p1,div.box div.div1 p,p{    /* div.box ：是代表div属性里面有类选择器.box*/
+			 color:green;
+		}
+	</style>
+</head>
+<body>
+	<div class='div1'>
+	<ul class='box'>
+		<li>逗号是并集选择器（几个逗号几块）；空格是后代选择器（属于级联）；</li>
+	</ul>
+	</div>
+
+	<div class='div1'>
+		<p>div.box ：是代表div属性里面有类选择器.box</p>
+	</div>
+	
+	<div class='box'>
+		<p class='p1'>狗</p>
+	</div>
+
+
+	<div class='box'>
+		<div class='div1'>
+			<p>子</p>
+		</div>
+	</div>
+
+
+	<p>哥</p>
+
+
+
+	
+</body>
+</html>

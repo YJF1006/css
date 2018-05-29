@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.father{
+			width:500px;
+			height:500px;
+			background: red;
+		}
+
+		.son{
+			width:100px;
+			height:100px;
+			background: green;
+
+			margin-left:auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son"></div><br><br><br>
+		<p> 规避脱标流用margin-left:auto;  意思是让盒子左侧充满，即把盒子冲到了最右侧</p>
+		<p>margin:0 auto;就是利用这个思想</p>
+	</div>
+</body>
+</html>

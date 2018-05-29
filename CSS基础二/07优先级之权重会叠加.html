@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>07优先级之权重会叠加</title>
+	<style type="text/css">
+		.father{
+			color:red;
+		}
+
+		.son{
+			color:green;
+		}
+		#box{
+			color:pink;
+			font-size:100px;
+		}
+
+			/* 权重会叠加 */
+
+		p.plus{
+			color:yellow;
+			font-size:100px;
+		}
+
+				.plus{
+			color:blue;
+		}
+
+		.father .plus{
+			font-style:italic;
+			color:#996623;
+		}
+		
+	</style>
+
+</head>
+<body>
+	<div class="father" id='box'>
+	<p class="son">继承的权重为0</p></div>
+
+
+	<div class='father'>
+	<p class="plus">权重会叠加</p></div>
+	
+	
+</body>
+</html>
